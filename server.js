@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 
 // Base URL for the Quran API
 const QURAN_API_BASE_URL = 'https://api.alquran.cloud/v1';
