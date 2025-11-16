@@ -3,6 +3,7 @@ import axios from 'axios';
 
 
 const app = express();
+//000000
 const PORT = 3000;
 
 // Base URL for the Quran API
@@ -38,15 +39,15 @@ app.get('/surah', async (req, res) => {
         });
     } catch (error) {
         console.error('Error fetching Surahs:', error); // Log full error
-        res.status(500).json({
-            code: 500,
-            status: 'Internal Server Error',
+        res.status(501).json({
+            code: 501,
+            status: 'Not Implemented',
             message: 'Failed to fetch Surahs'
         });
     }
 });
 
-// Start the server
+// Start the server 1 222
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
